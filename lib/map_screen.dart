@@ -11,7 +11,7 @@ class MapScreen extends StatefulWidget {
 class _MapScreenState extends State<MapScreen> {
   Marker? _origin;
   Marker? _destination;
-  GoogleMapController? _googleMapController;
+   GoogleMapController ?_googleMapController;
 
   static const _initialCameraPosition =
       CameraPosition(target: LatLng(42.882004, 74.582748), zoom: 11.5);
@@ -88,6 +88,7 @@ class _MapScreenState extends State<MapScreen> {
           if (_destination != null) _destination!,
         },
         onLongPress: _addMarker,
+        onMapCreated: (controller) => _googleMapController = controller,
       ),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Theme.of(context).primaryColor,
