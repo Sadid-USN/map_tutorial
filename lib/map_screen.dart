@@ -55,7 +55,7 @@ class _MapScreenState extends State<MapScreen> {
                 ));
               },
               style: TextButton.styleFrom(
-                primary: Colors.green,
+                primary:  const Color(0xff6263FF),
                 textStyle: const TextStyle(fontWeight: FontWeight.w600)
               ),
               child: const Text('ORIGIN'),),
@@ -73,7 +73,7 @@ class _MapScreenState extends State<MapScreen> {
                 ));
               },
               style: TextButton.styleFrom(
-                primary: Colors.blue,
+                primary: Colors.green,
                 textStyle: const TextStyle(fontWeight: FontWeight.w600)
               ),
               child: const Text('DEST'),),
